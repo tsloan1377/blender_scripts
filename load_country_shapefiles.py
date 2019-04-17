@@ -1,6 +1,6 @@
-#  A script to test and familiarize myself with functions for loading data from csv into blender, and related experiments.
+# load_country_shapefiles.py
+# To be run from within Blender, after creating shapeCoords.csv using the Jupyter Notebook: 'load_shapefiles_export_csn.ipynb'
 
-# Based off of load_globe_data.py, check there is something doesn't make sense...
 import bpy
 import math
 import csv
@@ -8,7 +8,7 @@ import bmesh
 import numpy as np
 
 
-data_path = 'E:\Documents\Professional\Jupyter notebooks\Projects\Weather\export\shapeCoords.csv'
+data_path = 'mypath\shapeCoords.csv'
 base_r = 3
 n_rows = np.nan
 file = csv.reader(open(data_path, newline=''), delimiter=',')
